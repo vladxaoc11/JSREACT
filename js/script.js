@@ -19,8 +19,8 @@ const personalMovieDB = {
 
 function rememberMyFilms() {
 	for (let index = 0; index < 2; index++) {
-		let movie = prompt("Один из последних просмотренных фильмов?");
-		let star = prompt("На сколько оцените его?");
+		let movie = prompt("Один из последних просмотренных фильмов?").trim();
+		let star = prompt("На сколько оцените его?").trim();
 		if (
 			movie != null &&
 			star != null &&
@@ -73,4 +73,5 @@ function writeYourGenres() {
 		}
 	}
 }
-writeYourGenres();19
+writeYourGenres();
+19;
